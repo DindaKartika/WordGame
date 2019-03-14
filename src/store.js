@@ -7,7 +7,9 @@ const initialState = {
     password: "",
     username: "",
     email: "",
-    is_login: false
+    is_login: false,
+    choosen: 0,
+    totalScore: 0,
 };
 
 export const store = createStore(initialState)

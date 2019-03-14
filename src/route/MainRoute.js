@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
+
+import Home from './../page/home.js'
+
+
+const MainRoute = () =>{
+    return(
+        <Switch>
+            <Route exact path="/" component={Home}/>
+        </Switch>
+    )
+}
+
+
+export default MainRoute;
+=======
 // LIST IMPORT MODULE
 import React, { Component } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
@@ -24,3 +42,4 @@ class MainRoute extends Component {
 
 // EXPORT THE MAIN CLASS
 export default MainRoute;
+>>>>>>> dev

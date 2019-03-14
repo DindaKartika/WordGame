@@ -34,10 +34,10 @@ code {
   .homebutton{
     font-size: 1rem;
   }
-  /* LOGIN page start here */
-  /* LOGIN page end here */
 }
 
+
+/* =============================================== FOR MOBILE DEVICE =============================================== */
 @media only screen and (max-width: 600px) {
   .title{
     font-size: 3rem;
@@ -134,4 +134,5 @@ code {
   color: #008080;
   font-weight: bold
 }
+/* =============================================== FOR MOBILE DEVICE =============================================== */
 

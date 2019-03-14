@@ -19,9 +19,9 @@ code {
 /* Home Page */
 
 .title{
-  font-family: 'Baloo', cursive;
   font-size: 7.5rem;
   color: aquamarine;
+  font-family: 'Baloo', cursive;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -58,7 +58,6 @@ code {
   background-color: rgba(64, 224, 208, 0.2);
   border: 2px solid aqua;
   border-radius: 10px;
-  font-family: 'Sniglet', cursive;
   font-size: 2rem;
   color: #008080;
   font-weight: bold
@@ -69,8 +68,11 @@ code {
   padding: 4% 10%;
   border: 3px solid aqua;
   border-radius: 20%;
-  font-family: 'Sniglet', cursive;
   text-align: center
+}
+
+.profile label{
+  font-size: 1.5rem;
 }
 
 .profilebutton{
@@ -81,7 +83,6 @@ code {
   background-color: rgba(64, 224, 208, 0.2);
   border: 2px solid aqua;
   border-radius: 10px;
-  font-family: 'Sniglet', cursive;
   font-size: 2rem;
   color: #008080;
   font-weight: bold

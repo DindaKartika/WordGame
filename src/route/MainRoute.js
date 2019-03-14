@@ -2,18 +2,32 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
+import Profile from './../page/profile.js'
+=======
+<<<<<<< HEAD
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
+
 import Home from './../page/home.js'
 
+>>>>>>> dev
 
 const MainRoute = () =>{
     return(
         <Switch>
+<<<<<<< HEAD
+            <Route exact path="/profile" component={Profile}/>
+=======
             <Route exact path="/" component={Home}/>
+>>>>>>> dev
         </Switch>
     )
 }
 
 
+<<<<<<< HEAD
+export default MainRoute;
+=======
 export default MainRoute;
 =======
 // LIST IMPORT MODULE
@@ -42,4 +56,5 @@ class MainRoute extends Component {
 
 // EXPORT THE MAIN CLASS
 export default MainRoute;
+>>>>>>> dev
 >>>>>>> dev

@@ -8,15 +8,9 @@ import Profile from './page/profile.js'
 class App extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <div >
         <Profile/>
       </div>
-=======
-      <dev>
-        <Home/>
-      </dev>
->>>>>>> dev
     );
   }
 }

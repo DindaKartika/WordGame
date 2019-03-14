@@ -12,9 +12,9 @@ class Profile extends Component {
                 <div className="col-md-12">
                     <div className="userProfile">
                         <h2 className="title">Profile</h2>
-                        <label>Username:</label><label>Dinda</label>
+                        <label>Username: </label><label>Dinda</label>
                         <br/>
-                        <label>Last Played:</label><label>2 Maret 2019</label>
+                        <label>Last Played: </label><label>02 Maret 2019</label>
                     </div>
                 </div>
             </div>

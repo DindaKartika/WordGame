@@ -27,6 +27,90 @@ code {
   font-family: 'Baloo', cursive;
 }
 
+.home{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
+.homebutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
+/* Styling Profile */
+
+.profile{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
+.profile label{
+  font-size: 1.5rem;
+}
+
+.profilebutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
+/* Styling Description */
+
+.description{
+  margin: 10% 20%;
+
+}
+
+.descriptionTitle{
+  text-align: center;
+}
+
+.description hr{
+  border: 2px solid #008080;
+}
+
+.descriptionbutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold;
+}
+
+.linkToNextQ{
+  text-align: center;
+}
+
+/* Media Query */
+
 @media only screen and (max-width: 1000px) {
   .title{
     font-size: 5rem;
@@ -39,11 +123,29 @@ code {
 
 /* =============================================== FOR MOBILE DEVICE =============================================== */
 @media only screen and (max-width: 600px) {
+  .home{
+    margin: 35% 20%;
+    padding: 15% 10%;
+  }
   .title{
     font-size: 3rem;
   }
   .homebutton{
-    font-size: 0.6rem;
+    font-size: 1rem;
+  }
+  
+  .profile{
+    margin: 35% 10%;
+    padding: 15% 5%;
+  }
+  .profile label{
+    font-size: 1rem;
+  }
+  .profilebutton{
+    font-size: 1rem;
+  }
+  .descriptionbutton{
+    font-size: 1rem;
   }
     /* LOGIN page start here */
   .login-page {
@@ -86,53 +188,5 @@ code {
 }
 /* END OF MEDIA QUERY 600px */
 
-.home{
-  margin: 8% 20%;
-  padding: 4% 10%;
-  border: 3px solid aqua;
-  border-radius: 20%;
-  text-align: center
-}
 
-.homebutton{
-  width: 150px;
-  max-width: 100%;
-  padding: 1% 0;
-  margin: 1% 0;
-  background-color: rgba(64, 224, 208, 0.2);
-  border: 2px solid aqua;
-  border-radius: 10px;
-  font-family: 'Sniglet', cursive;
-  font-size: 2rem;
-  color: #008080;
-  font-weight: bold
-}
-
-/* Styling Profile */
-
-.profile{
-  margin: 8% 20%;
-  padding: 4% 10%;
-  border: 3px solid aqua;
-  border-radius: 20%;
-  text-align: center
-}
-
-.profile label{
-  font-size: 1.5rem;
-}
-
-.profilebutton{
-  width: 150px;
-  max-width: 100%;
-  padding: 1% 0;
-  margin: 1% 0;
-  background-color: rgba(64, 224, 208, 0.2);
-  border: 2px solid aqua;
-  border-radius: 10px;
-  font-size: 2rem;
-  color: #008080;
-  font-weight: bold
-}
 /* =============================================== FOR MOBILE DEVICE =============================================== */
-

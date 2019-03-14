@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
 body {
   margin: 0;
   padding: 0;
@@ -12,9 +15,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Sniglet');
-@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 .title{
   font-family: 'Baloo', cursive;
@@ -61,3 +61,43 @@ code {
   color: #008080;
   font-weight: bold
 }
+/* LOGIN page start here */
+.login-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.login-frame {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.login-form-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.form-label {
+  font-size: 10px;
+}
+
+.form-control {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+
+/* LOGIN page end here */

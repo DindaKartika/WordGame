@@ -9,13 +9,10 @@ class Credit extends Component {
             <div className="credit">
                 <section>
                     <h2 className="title">Word Game</h2>
-                    <label>Created by:</label>
-                    <br/>
-                    <label>Angga Dwi Apria Rifandi</label>
-                    <br/>
-                    <label>Dinda Kartika Vilaili</label>
-                    <br/>
-                    <label>Maestro Trastanechora</label>
+                    <h4>Created by:</h4>
+                    <h4>Angga Dwi Apria Rifandi</h4>
+                    <h4>Dinda Kartika Vilaili</h4>
+                    <h4>Maestro Trastanechora</h4>
                 </section>
             </div>
         );

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+/* Home Page */
+
+.title{
+  font-size: 7.5rem;
+  color: aquamarine;
+  font-family: 'Baloo', cursive;
+}
+
+@media only screen and (max-width: 1000px) {
+  .title{
+    font-size: 5rem;
+  }
+  .homebutton{
+    font-size: 1rem;
+  }
+  /* LOGIN page start here */
+  /* LOGIN page end here */
+}
+
+@media only screen and (max-width: 600px) {
+  .title{
+    font-size: 3rem;
+  }
+  .homebutton{
+    font-size: 0.6rem;
+  }
+    /* LOGIN page start here */
+  .login-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .login-frame {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .login-form-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .form-label {
+    font-size: 10px;
+  }
+
+  .form-control {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  /* LOGIN page end here */
+}
+/* END OF MEDIA QUERY 600px */
+
+.home{
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 3px solid aqua;
+  border-radius: 20%;
+  text-align: center
+}
+
+.homebutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-family: 'Sniglet', cursive;
+  font-size: 2rem;
+  color: #008080;
+  font-weight: bold
+}
+
+/* Styling Profile */
+
+.profile{
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 3px solid aqua;
+  border-radius: 20%;
+  text-align: center
+}
+
+.profile label{
+  font-size: 1.5rem;
+}
+
+.profilebutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: #008080;
+  font-weight: bold
+}
+

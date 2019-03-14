@@ -1,8 +1,9 @@
+// IMPORT MODULE
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import AppRoute from "./AppRoute";
 import * as serviceWorker from './serviceWorker';
+<<<<<<< HEAD
 // import {Provider} from "unistore/react";
 // import {store} from "./"
 import AppRoute from "./AppRoute"
@@ -23,3 +24,26 @@ render(AppRoute)
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+=======
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'unistore/react'
+import { store } from './store'
+
+// SET THE APP'S GLOBAL ENVIRONMENT
+const render = Component =>
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <Component />
+        </BrowserRouter>
+    </Provider>
+    , 
+document.getElementById('root')
+);
+
+// RENDER THE APP
+render(AppRoute)
+
+// TURN THE SERVICEWORKER ON
+serviceWorker.register();
+>>>>>>> dev

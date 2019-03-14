@@ -1,29 +1,26 @@
+// IMPORT MODULE
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
-import App from './App';
-// import AppRouter from './AppRouter';
+import AppRoute from "./AppRoute";
 import * as serviceWorker from './serviceWorker';
-// import {BrowserRouter} from 'react-router-dom';
-// import {store} from './store.js'
-// import {Provider} from 'unistore/react'
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'unistore/react'
+import { store } from './store'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// SET THE APP'S GLOBAL ENVIRONMENT
+const render = Component =>
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <Component />
+        </BrowserRouter>
+    </Provider>
+    , 
+document.getElementById('root')
+);
 
-// const rootEl = document.getElementById('root');
-// const render = Component =>
-//     ReactDOM.render(
-//         <Provider store={store}>
-//             <BrowserRouter>
-//                 <Component/>
-//             </BrowserRouter>
-//         </Provider>,
-//         rootEl
-//     );
+// RENDER THE APP
+render(AppRoute)
 
-//     render(AppRouter);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// TURN THE SERVICEWORKER ON
 serviceWorker.register();

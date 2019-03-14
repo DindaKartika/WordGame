@@ -4,6 +4,7 @@ import Profile from './../page/profile.js'
 import Home from './../page/home.js'
 import Login from '../page/Login';
 import Credit from './../page/credit'
+import Rule from './../page/rule'
 
 const MainRoute = () =>{
     return(
@@ -12,6 +13,7 @@ const MainRoute = () =>{
             <Route exact path="/profile" component={Profile}/>
             <Route exact path="/login" component={Login} />
             <Route exact path="/credit" component={Credit}/>
+            <Route exact path="/rule" component={Rule}/>
         </Switch>
     )
 }

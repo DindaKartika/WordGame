@@ -118,6 +118,15 @@ code {
   text-align: center
 }
 
+.rule{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 5% 20%;
+  padding: 2.5% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
 
 /* Media Query */
 
@@ -169,6 +178,13 @@ code {
     margin: 32% 5%;
     padding: 15% 5%;
   }
+
+  /* Halaman rule */
+  .rule{
+    margin: 23% 5%;
+    padding: 15% 5%;
+  }
+
     /* LOGIN page start here */
   .login-page {
     position: absolute;

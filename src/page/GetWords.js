@@ -9,16 +9,16 @@ import logo from "../logo.svg"
 import "../App.css"
 
 const similarWordUrl = "http://api.datamuse.com/words?ml="
-const randomWordUrl = "https://random-word-api.herokuapp.com/word?key=7PFKNZXE&number="
+const randomWordUrl = "https://random-word-api.herokuapp.com/word?key=G0WS22CI&number="
 class GetWords extends Component{
 
     async componentDidMount(){
         await this.getRandomWords(10)
-        console.log("keyword",this.props.listKeyWords)
+        // console.log("keyword",this.props.listKeyWords)
         for(let i = 0; i < 10; i++){
             await this.getWords(this.props.listKeyWords[i])
         }
-        console.log("kabeh:",this.props.listWords)
+        // console.log("kabeh:",this.props.listWords)
         this.props.history.push("/question")
     }
 
@@ -27,10 +27,10 @@ class GetWords extends Component{
         await axios
         .get(randomWordUrl+number)
         .then(function(response){
-            console.log("random",response.data)
+            // console.log("random",response.data)
             const keyWordList = response.data
             store.setState({listKeyWords:keyWordList})
-            console.log("keywords",self.props.listKeyWords)
+            // console.log("keywords",self.props.listKeyWords)
         })
         .catch(function(error){
             console.log(error)
@@ -41,17 +41,17 @@ class GetWords extends Component{
         await axios
         .get(randomWordUrl+number)
         .then(function(response){
-            console.log("random fls",response.data)
+            // console.log("random fls",response.data)
             const falseWordList = response.data
             store.setState({listFalseWords:falseWordList})
-            console.log("keywords",self.props.listKeyWords)
+            // console.log("keywords",self.props.listKeyWords)
         })
         .catch(function(error){
             console.log(error)
         })
     }
     async getWords(word){
-        console.log("word: " + word)
+        // console.log("word: " + word)
         const self = this;
         await axios
         .get(similarWordUrl+word)
@@ -65,12 +65,12 @@ class GetWords extends Component{
             for (let i = 0; i < 3; i++){
                 falseWordList.push({word:falseWord[i], score: -30000})
             }
-            console.log("ffff",falseWordList)
+            // console.log("ffff",falseWordList)
             var answerList = rightWord.concat(falseWordList)
             answerList = self.shuffle(answerList)
-            console.log("jwb",answerList)
+            // console.log("jwb",answerList)
             store.setState({listWords:[...self.props.listWords, ...answerList]})
-            console.log("kbh", self.props.listWords)
+            // console.log("kbh", self.props.listWords)
         })
         .catch(function(error){
             console.log(error)
@@ -95,9 +95,11 @@ class GetWords extends Component{
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <p className="text-center Loading">
-                        Loading data
-                    </p>
+                    {/* <marquee>Loading */}
+                        <p className="text-center Loading">
+                            Loading data
+                        </p>
+                    {/* </marquee> */}
                 </header>
             </div>
         )

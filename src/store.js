@@ -16,6 +16,8 @@ const initialState = {
     listKeyWords: [],
     listWords: [],
     listFalseWords: [],
+    reset_local: false,
+    result_stage: false,
 };
 
 export const store = createStore(initialState)

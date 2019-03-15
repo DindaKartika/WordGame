@@ -7,6 +7,7 @@ import Credit from './../page/credit'
 import Rule from './../page/rule'
 import Notfound from '../page/Notfound';
 import Question from '../page/Question';
+import ListWord from './../page/listword'
 
 const MainRoute = () =>{
     return(
@@ -17,6 +18,7 @@ const MainRoute = () =>{
             <Route exact path="/credit" component={Credit}/>
             <Route exact path="/rule" component={Rule}/>
             <Route exact path="/question" component={Question} />
+            <Route exact path="/listword" component={ListWord}/>
             <Route exact path="/:path" component={Notfound} />
         </Switch>
     )

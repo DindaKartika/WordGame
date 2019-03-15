@@ -31,7 +31,7 @@ class Result extends Component {
                     </div>
                 </div>
             </div>
-            {/* <Link to="/"> */}
+            {/* <Link to="/description"> */}
                 <button className="profilebutton">Exit</button>
             {/* </Link> */}
         </section>

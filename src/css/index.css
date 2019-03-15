@@ -115,14 +115,40 @@ code {
   text-align: center
 }
 
+/* Styling Rule */
+
 .rule{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  margin: 5% 20%;
-  padding: 2.5% 10%;
+  margin: 8% 20%;
+  padding: 4% 10%;
   border: 1px solid grey;
   border-radius: 10px;
   text-align: center
 }
+
+.rule h5{
+  padding: 0.2% 0;
+}
+
+.titlerule{
+  font-size: 5rem;
+  color: aquamarine;
+  font-family: 'Baloo', cursive;
+}
+
+.buttonrule{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
 
 
 /* Media Query */
@@ -178,8 +204,21 @@ code {
 
   /* Halaman rule */
   .rule{
-    margin: 23% 5%;
+    margin: 30% 5%;
     padding: 15% 5%;
+  }
+
+  .rule h5{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .buttonrule{
+    font-size: 1rem;
+  }
+
+  .titlerule{
+    font-size: 3rem;
   }
 
     /* LOGIN page start here */

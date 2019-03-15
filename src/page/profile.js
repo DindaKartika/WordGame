@@ -15,7 +15,6 @@ const today = new Date()
 const date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()
 
 class Profile extends Component {
-<<<<<<< HEAD
     render() {
         if(!this.props.is_login){
             return <Redirect to={{pathname:"/login"}}/>
@@ -47,32 +46,6 @@ class Profile extends Component {
                             </div>
                         </div>
                     </section>
-=======
-  render() {
-    return (
-      <div className="profile">
-        <section>
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="userProfile">
-                        <h2 className="title">Profile</h2>
-                        <label>Username:</label><label>Dinda</label>
-                        <br/>
-                        <label>Last Played:</label><label>2 Maret 2019</label>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-6">
-                    <Link to="/">
-                        <button className="profilebutton">Back</button>
-                    </Link>
-                </div>
-                <div className="col-md-6">
-                    <Link to="/rule">
-                        <button className="profilebutton">Play</button>
-                    </Link>
->>>>>>> dev
                 </div>
             );
         }

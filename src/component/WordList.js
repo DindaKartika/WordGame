@@ -6,11 +6,11 @@ class WordList extends Component{
         const listWords = this.props.listWords;
         console.log(listWords);
         return(
-            <div>
+            <div className="row mx-0">
                 {listWords.map((item,key) => {
                     const word = item.word;
                     const score = item.score;
-                    return <WordItem key={key} word={word} score={score} />
+                    return <WordItem key={key} stage ={this.props.stage} word={word} score={score} />
                 })}
             </div>
         )

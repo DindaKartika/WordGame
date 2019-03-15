@@ -14,7 +14,7 @@ class Rule extends Component {
                     <h5>Every true answer will give you more points</h5>
                     <h5>Check the definition of the word</h5>
                     <h5>Have fun!</h5>
-                    <Link to="/question">
+                    <Link to="/getwords">
                         <button className="buttonrule">Start</button>
                     </Link>
                 </section>

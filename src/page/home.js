@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./../css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 // import "./../css/main.css";
+import '../css/index.css';
 
 class Home extends Component {
     render() {

@@ -52,7 +52,7 @@ code {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin: 8% 20%;
   padding: 4% 10%;
-  /* border: 1px solid grey; */
+  border: 1px solid grey;
   border-radius: 10px;
   text-align: center
 }
@@ -184,7 +184,6 @@ code {
     margin: 35% 10%;
     padding: 15% 5%;
   }
-
   .profile label{
     font-size: 1rem;
   }

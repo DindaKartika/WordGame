@@ -7,9 +7,16 @@ const initialState = {
     password: "",
     username: "",
     email: "",
+<<<<<<< HEAD
+    avatar: "",
+    question: "",
+    last_played: "",
+    is_login: false
+=======
     is_login: false,
     choosen: 0,
     totalScore: 0,
+>>>>>>> dev
 };
 
 export const store = createStore(initialState)
@@ -36,7 +43,8 @@ export const actions = store => ({
                         is_login: true,
                         username: response.data.user_data.username,
                         email: response.data.user_data.email,
-                        avatar : response.data.user_data.avatar
+                        avatar : response.data.user_data.avatar,
+                        // last_played : new Date()
                     });
                     console.log("cek store", store.getState())
                 } else {
@@ -47,5 +55,5 @@ export const actions = store => ({
                 console.log(error);
             }
         );
-    },
+    }
 })

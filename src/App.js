@@ -8,9 +8,9 @@ import Profile from './page/profile.js'
 class App extends Component {
   render() {
     return (
-      <div >
-        <Profile/>
-      </div>
+      <dev>
+        <Home/>
+      </dev>
     );
   }
 }

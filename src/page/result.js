@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import {withRouter} from 'react-router-dom';
+import { connect } from "unistore/react";
+import { actions } from '../store';
 // import{Link} from 'react-router-dom';
 import "./../css/bootstrap.min.css";
 import "./../css/index.css";
@@ -8,8 +10,8 @@ class Result extends Component {
 
     componentWillMount(){
         localStorage.setItem('last_played', new Date())
-        if (localStorage.getItem('score') > localStorage.getItem('highest_score')){
-            localStorage.setItem('highest_score', localStorage.getItem('score'))
+        if (this.props.totalScore > localStorage.getItem('highest_score')){
+            localStorage.setItem('highest_score', this.props.totalScore)
             localStorage.setItem('score', 0)
         }
         const nilaiSekarang = localStorage.getItem('score')
@@ -40,4 +42,4 @@ class Result extends Component {
   }
 }
 
-export default withRouter(Result);
+export default connect("totalScore", actions)(withRouter(Result));

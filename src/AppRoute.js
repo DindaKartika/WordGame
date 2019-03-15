@@ -7,7 +7,6 @@ import { withRouter } from "react-router-dom";
 
 class AppRoute extends Component {
     postSignout = () => {
-        localStorage.clear()
         this.props.history.push("/");
     };
     render() {

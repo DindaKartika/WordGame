@@ -127,6 +127,20 @@ code {
   text-align: center
 }
 
+.buttonrule{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
+
 
 /* Media Query */
 
@@ -183,6 +197,10 @@ code {
   .rule{
     margin: 23% 5%;
     padding: 15% 5%;
+  }
+
+  .buttonrule{
+    font-size: 1rem;
   }
 
     /* LOGIN page start here */

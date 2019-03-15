@@ -1,13 +1,17 @@
 // IMPORT MODULE
 import createStore from 'unistore';
 import axios from "axios"
+import 'react-datetime'
 
 // SET THE GLOBAL STATE VARIABLES
 const initialState = {
     password: "",
     username: "",
     email: "",
-    is_login: false
+    avatar: "",
+    is_login: false,
+    question: "",
+
 };
 
 export const store = createStore(initialState)

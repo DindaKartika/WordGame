@@ -1,20 +1,32 @@
 import React, { Component } from "react";
+import {Redirect} from 'react-router-dom';
+import { connect } from "unistore/react";
+import { actions } from '../store';
+import { withRouter } from "react-router-dom";
+import 'react-datetime';
+
 // import{Link} from 'react-router-dom';
 import "./../css/bootstrap.min.css";
 import "./../css/index.css";
 
+today = new Date()
+
 class Profile extends Component {
   render() {
-    return (
+    if(!this.props.is_login){
+        return <Redirect to={{pathname:"/login"}}/>
+    }
+    else{
+        return(
       <div className="profile">
         <section>
             <div className="row">
                 <div className="col-md-12">
                     <div className="userProfile">
                         <h2 className="title">Profile</h2>
-                        <label>Username: </label><label>Dinda</label>
+                        <label>Username: </label><label>{this.props.username}</label>
                         <br/>
-                        <label>Last Played: </label><label>02 Maret 2019</label>
+                        <label>Last Played: </label><label>{today}</label>
                     </div>
                 </div>
             </div>
@@ -35,5 +47,6 @@ class Profile extends Component {
     );
   }
 }
+}
 
-export default Profile;
+export default connect("is_login, username", actions)(withRouter(Profile));

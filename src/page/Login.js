@@ -6,10 +6,10 @@ import { actions } from '../store';
 import { withRouter } from "react-router-dom";
 
 class Login extends Component {
+
   doLogin = () => {
     this.props.postLogin().then(()=> {
         this.props.history.replace("/profile");
-        // return <Redirect to={{ pathname: "/signin" }} />;
     });
   };
 

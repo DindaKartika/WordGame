@@ -1,7 +1,6 @@
 // IMPORT MODULE
 import createStore from 'unistore';
 import axios from "axios"
-import 'react-datetime'
 
 // SET THE GLOBAL STATE VARIABLES
 const initialState = {
@@ -9,9 +8,9 @@ const initialState = {
     username: "",
     email: "",
     avatar: "",
-    is_login: false,
     question: "",
-
+    last_played: "",
+    is_login: false
 };
 
 export const store = createStore(initialState)
@@ -38,7 +37,8 @@ export const actions = store => ({
                         is_login: true,
                         username: response.data.user_data.username,
                         email: response.data.user_data.email,
-                        avatar : response.data.user_data.avatar
+                        avatar : response.data.user_data.avatar,
+                        // last_played : new Date()
                     });
                     console.log("cek store", store.getState())
                 } else {
@@ -49,5 +49,5 @@ export const actions = store => ({
                 console.log(error);
             }
         );
-    },
+    }
 })

@@ -21,7 +21,7 @@ class Blog extends Component {
   }
 
   componentDidMount = () =>{
-    const vocab = "reflection"
+    const vocab = this.props.location.pathname.slice(13)
     const urlSearch = urlBasic + vocab
     console.log(urlSearch)
     const self = this;
@@ -41,15 +41,25 @@ class Blog extends Component {
 
       return (
         <div class="description">
-            <h1 class="descriptionTitle">Vocab List</h1>
+            <h1 class="descriptionTitle">{this.props.location.pathname.slice(13)}</h1>
             <hr/>
             {descriptionContent.map((item, key) => {
                 return <DescriptionContent key ={key} type={item.type} definition={item.definition} example={item.example}/>;
             })}
             <div className="linkToNextQ">
-            {/* <Link to="/question"> */}
-                <button className="descriptionbutton">Next</button>
-            {/* </Link> */}
+              <div className="row">
+                <div className="col-6">
+                  {/* <Link to="/question"> */}
+                    <button className="descriptionbutton">Back</button>
+                  {/* </Link> */}
+                </div>
+                <div className="col-6">
+                  {/* <Link to="/question"> */}
+                    <button className="descriptionbutton">Next</button>
+                  {/* </Link> */}
+                </div>
+              </div>
+            
             </div>
         </div>
       );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import{Link} from 'react-router-dom';
 import "./../css/bootstrap.min.css";
 import "./../css/index.css";
+import { Link } from 'react-router-dom';
 
 class Profile extends Component {
   render() {
@@ -20,14 +21,14 @@ class Profile extends Component {
             </div>
             <div className="row">
                 <div className="col-md-6">
-                    {/* <Link to="/"> */}
+                    <Link to="/">
                         <button className="profilebutton">Back</button>
-                    {/* </Link> */}
+                    </Link>
                 </div>
                 <div className="col-md-6">
-                    {/* <Link to="/rule"> */}
-                        <button className="profilebutton">Start</button>
-                    {/* </Link> */}
+                    <Link to="/rule">
+                        <button className="profilebutton">Play</button>
+                    </Link>
                 </div>
             </div>
         </section>

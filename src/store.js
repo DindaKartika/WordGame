@@ -7,10 +7,16 @@ const initialState = {
     password: "",
     username: "",
     email: "",
+<<<<<<< HEAD
     avatar: "",
     question: "",
     last_played: "",
     is_login: false
+=======
+    is_login: false,
+    choosen: 0,
+    totalScore: 0,
+>>>>>>> dev
 };
 
 export const store = createStore(initialState)

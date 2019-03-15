@@ -6,7 +6,9 @@ import { withRouter } from "react-router-dom";
 // import { actions } from './store';
 
 class AppRoute extends Component {
-  
+    postSignout = () => {
+        this.props.history.push("/");
+    };
     render() {
         return (
             <div className="App">

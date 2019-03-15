@@ -15,19 +15,19 @@ class Home extends Component {
                     </div>
                     <div className="row">
                         <div className="col-lg-4">
-                            {/* <Link to="/rules"> */}
-                                <button className="homebutton">Start</button>
-                            {/* </Link> */}
+                            <Link to="/rule">
+                                <button className="homebutton">Play</button>
+                            </Link>
                         </div>
                         <div className="col-lg-4">
-                            {/* <Link to="/credit"> */}
-                                <button className="homebutton">Exit</button>
-                            {/* </Link> */}
+                            <Link to="/credit">
+                                <button className="homebutton">Credit</button>
+                            </Link>
                         </div>
                         <div className="col-lg-4">
-                            {/* <Link to="/profile"> */}
+                            <Link to="/profile">
                                 <button className="homebutton">Profile</button>
-                            {/* </Link> */}
+                            </Link>
                         </div>
                     </div>
                 </section>

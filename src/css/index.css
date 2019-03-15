@@ -16,9 +16,6 @@ code {
     monospace;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Sniglet');
-@import url('https://fonts.googleapis.com/css?family=Baloo');
-
 /* Home Page */
 
 .title{
@@ -26,6 +23,135 @@ code {
   color: aquamarine;
   font-family: 'Baloo', cursive;
 }
+
+.home{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
+.homebutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
+/* Styling Profile */
+
+.profile{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
+.profile label{
+  font-size: 1.5rem;
+}
+
+.profilebutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
+/* Styling Description */
+
+.description{
+  margin: 10% 20%;
+
+}
+
+.descriptionTitle{
+  text-align: center;
+}
+
+.description hr{
+  border: 2px solid #008080;
+}
+
+.descriptionbutton{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold;
+}
+
+.linkToNextQ{
+  text-align: center;
+}
+
+.credit{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 6% 20%;
+  padding: 2.5% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
+/* Styling Rule */
+
+.rule{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 8% 20%;
+  padding: 4% 10%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center
+}
+
+.rule h5{
+  padding: 0.2% 0;
+}
+
+.titlerule{
+  font-size: 5rem;
+  color: aquamarine;
+  font-family: 'Baloo', cursive;
+}
+
+.buttonrule{
+  width: 150px;
+  max-width: 100%;
+  padding: 1% 0;
+  margin: 1% 0;
+  background-color: rgba(64, 224, 208, 0.2);
+  border: 2px solid aqua;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #008080;
+  font-weight: bold
+}
+
+
+
+/* Media Query */
 
 @media only screen and (max-width: 1000px) {
   .title{
@@ -39,12 +165,61 @@ code {
 
 /* =============================================== FOR MOBILE DEVICE =============================================== */
 @media only screen and (max-width: 600px) {
+
+  /* Halaman Home */
+  .home{
+    margin: 35% 20%;
+    padding: 15% 10%;
+  }
   .title{
     font-size: 3rem;
   }
   .homebutton{
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
+
+  /* Halaman Profil */
+  
+  .profile{
+    margin: 35% 10%;
+    padding: 15% 5%;
+  }
+  .profile label{
+    font-size: 1rem;
+  }
+  .profilebutton{
+    font-size: 1rem;
+  }
+  .descriptionbutton{
+    font-size: 1rem;
+  }
+
+  /* Halaman Credit */
+
+  .credit{
+    margin: 32% 5%;
+    padding: 15% 5%;
+  }
+
+  /* Halaman rule */
+  .rule{
+    margin: 30% 5%;
+    padding: 15% 5%;
+  }
+
+  .rule h5{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .buttonrule{
+    font-size: 1rem;
+  }
+
+  .titlerule{
+    font-size: 3rem;
+  }
+
     /* LOGIN page start here */
   .login-page {
     position: absolute;
@@ -54,7 +229,7 @@ code {
   }
 
   .login-frame {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0);
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -83,56 +258,120 @@ code {
     font-size: 14px;
   }
   /* LOGIN page end here */
+
+  /* QUESTION page start here */
+
+  .item-wrapperz {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    /* margin-top: 40%; */
+  }
+  .box-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .box-item:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+/* 
+  .key-word {
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  } */
+
+  .test {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  /* QUESTION page end here */
 }
 /* END OF MEDIA QUERY 600px */
 
-.home{
-  margin: 8% 20%;
-  padding: 4% 10%;
-  border: 3px solid aqua;
-  border-radius: 20%;
-  text-align: center
-}
 
-.homebutton{
-  width: 150px;
-  max-width: 100%;
-  padding: 1% 0;
-  margin: 1% 0;
-  background-color: rgba(64, 224, 208, 0.2);
-  border: 2px solid aqua;
-  border-radius: 10px;
-  font-family: 'Sniglet', cursive;
-  font-size: 2rem;
-  color: #008080;
-  font-weight: bold
-}
-
-/* Styling Profile */
-
-.profile{
-  margin: 8% 20%;
-  padding: 4% 10%;
-  border: 3px solid aqua;
-  border-radius: 20%;
-  text-align: center
-}
-
-.profile label{
-  font-size: 1.5rem;
-}
-
-.profilebutton{
-  width: 150px;
-  max-width: 100%;
-  padding: 1% 0;
-  margin: 1% 0;
-  background-color: rgba(64, 224, 208, 0.2);
-  border: 2px solid aqua;
-  border-radius: 10px;
-  font-size: 2rem;
-  color: #008080;
-  font-weight: bold
-}
 /* =============================================== FOR MOBILE DEVICE =============================================== */
+.input-field {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.3s all;
+  cursor: text;
+  text-align: left;
+  font-size: 16px;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  /* padding: 20px 0; */
+  font-size: 18px;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+input:invalid {
+  outline: 0;
 
+  /* // color: #ff2300;
+  //   border-color: #ff2300; */
+}
+input:focus,
+input:valid {
+  border-color: #00dd22;
+}
+input:focus~label,
+input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #00dd22;
+}
+
+.input-area {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
